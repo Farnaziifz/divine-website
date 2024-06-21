@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'dana-regular';
+    src: url('/assets/fonts/DanaFaNum-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'dana-light';
+    src: url('/assets/fonts/DanaFaNum-Light.ttf');
+  }
+  @font-face {
+    font-family: 'dana-medium';
+    src: url('/assets/fonts/DanaFaNum-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'dana-bold';
+    src: url('/assets/fonts/DanaFaNum-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'dana-demi';
+    src: url('/assets/fonts/DanaFaNum-DemiBold.ttf');
+  }
+  @font-face {
+    font-family: 'dana-extra';
+    src: url('/assets/fonts/DanaFaNum-ExtraBold.ttf');
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+:root {
+  --toastify-font-family: 'dana-medium';
+}
+
+* {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'dana-regular';
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.my-shadow {
+  box-shadow: 0 0 6px #c2c2c2;
+}
+
+.font-tost {
+  font-family: 'dana-regular' !important;
+}
