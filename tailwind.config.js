@@ -16,13 +16,15 @@ module.exports = {
       '2xl': '1536px',
     },
     colors: {
-      primary: '#F1AF09',
-      'sec-gray': '#CCCCCC',
+      primary: '#9A6649',
+      secondary: '#FBECD3',
+      primaryOrange: '#F28705',
       white: '#fff',
       transparent: 'transparent',
+      danger: '#9a2626',
       'light-success': '#C9F9D1',
       'text-gray': '#828181',
-      danger: '#9a2626',
+      'sec-gray': '#CCCCCC',
     },
     container: {
       center: true,
