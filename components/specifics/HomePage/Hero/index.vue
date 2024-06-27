@@ -5,7 +5,7 @@ import TrIcon from '@/assets/img/logo/tr-icon.svg'
 <template>
   <div class="bg-secondary flex h-screen reltive">
     <img :src="TrIcon" alt="" class="absolute top-[100%] z-[-1] right-[50%] translate-x-1/2"  />
-    <div class="container m-auto w-full">
+    <div class="container  w-full">
       <div class="h-[250px]">
         <div class="container">
           <img :src="Slogan" alt="" class="w-full" />
