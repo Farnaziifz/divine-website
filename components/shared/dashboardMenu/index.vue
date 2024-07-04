@@ -44,13 +44,7 @@ const isActiveRoute = (path: string) => {
         <p class="mr-1 font-[dana-demi] text-sm">سفارشات</p>
       </div>
     </NuxtLink>
-    <div class="w-full border border-sec-gray my-5"></div>
-    <NuxtLink to="/dashboard/requests">
-      <div class="flex items-center cursor-pointer">
-        <Icon name="material-symbols-light:list-alt-outline-sharp" size="24" />
-        <p class="mr-1 font-[dana-demi] text-sm">درخواست‌ها</p>
-      </div>
-    </NuxtLink>
+
     <div class="w-full border border-sec-gray my-5"></div>
     <NuxtLink to="/dashboard/address">
       <div class="flex items-center cursor-pointer">
@@ -82,7 +76,7 @@ const isActiveRoute = (path: string) => {
     title="منو"
     :has-border="false"
     class="block lg:hidden"
-    :collapsed="false"
+    :collapsed="true"
   >
     <div class="rounded border border-sec-gray p-4">
       <div class="flex justify-between">
@@ -122,19 +116,7 @@ const isActiveRoute = (path: string) => {
         </div>
       </NuxtLink>
       <div class="w-full border border-sec-gray my-5"></div>
-      <NuxtLink
-        to="/dashboard/requests"
-        :class="{ 'active-class': isActiveRoute('/dashboard/requests') }"
-      >
-        <div class="flex items-center cursor-pointer">
-          <Icon
-            name="material-symbols-light:list-alt-outline-sharp"
-            size="24"
-          />
-          <p class="mr-1 font-[dana-demi] text-sm">درخواست‌ها</p>
-        </div>
-      </NuxtLink>
-      <div class="w-full border border-sec-gray my-5"></div>
+
       <NuxtLink
         to="/dashboard/address"
         :class="{ 'active-class': isActiveRoute('/dashboard/address') }"
