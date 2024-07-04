@@ -25,8 +25,8 @@ module.exports = {
       'light-success': '#C9F9D1',
       'text-gray': '#828181',
       'sec-gray': '#CCCCCC',
-      textPrimary: '#5E2121'
-      
+      textPrimary: '#5E2121',
+      'primary-40': '#9a664966',
     },
     container: {
       center: true,
