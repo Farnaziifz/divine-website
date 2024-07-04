@@ -61,7 +61,6 @@ const otpCode = ref()
       <Timer />
       <button
         class="w-[300px] lg:w-[400px] block p-4 bg-primary rounded focus:outline-none text-white mt-2"
-        @click="checkOtpLength"
       >
         ورود
       </button>
