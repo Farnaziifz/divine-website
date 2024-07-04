@@ -1,21 +1,23 @@
-<script setup>
+<script setup lang="ts">
 import Card from './card.vue'
 import HeartIcon from '../../../assets/img/icons/heart.vue'
 
-const props = defineProps({
-  id: '',
-  name: '',
-  img: '',
-  price: '',
-})
+type productProps = {
+  id: string | number
+  name: string
+  img: string
+  price: string | number
+}
+
+const props = defineProps<productProps>()
 </script>
 
 <template>
   <Card>
     <template v-slot:content>
       <div class="h-full">
-        <div class="w-full h-[200px] bg-primaryOrange mb-3">
-          <img src="" />
+        <div class="w-full h-[300px] mb-3">
+          <img :src="props.img" class="w-full h-full object-cover rounded" />
         </div>
         <p class="text-3xl text-primary font-[dana-bold] text-center mb-2">
           {{ props.name }}
@@ -31,7 +33,9 @@ const props = defineProps({
               >
             </button>
           </NuxtLink>
-          <button class="w-20 p-2 rounded bg-primary flex justify-center mr-3 items-center">
+          <button
+            class="w-20 p-2 rounded bg-primary flex justify-center mr-3 items-center"
+          >
             <HeartIcon />
           </button>
         </div>
