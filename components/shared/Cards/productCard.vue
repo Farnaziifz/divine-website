@@ -1,23 +1,29 @@
 <script setup lang="ts">
 import Card from './card.vue'
 import HeartIcon from '../../../assets/img/icons/heart.vue'
+import discount from '~/assets/img/icons/discount.vue'
 
 type productProps = {
   id: string | number
   name: string
   img: string
   price: string | number
+  hasDiscount?: boolean
+  priceDiscount?: string | number
 }
 
-const props = defineProps<productProps>()
+const props = withDefaults(defineProps<productProps>(), {
+  hasDiscount: false,
+})
 </script>
 
 <template>
   <Card>
     <template v-slot:content>
       <div class="h-full">
-        <div class="w-full h-[300px] mb-3">
+        <div class="w-full h-[300px] mb-3 relative">
           <img :src="props.img" class="w-full h-full object-cover rounded" />
+          <discount class="absolute -top-4 right-0" v-if="hasDiscount" />
         </div>
         <p class="text-3xl text-primary font-[dana-bold] text-center mb-2">
           {{ props.name }}

@@ -26,7 +26,7 @@ const categoryData = [
         <img :src="Divine" alt="" class="mr-1 w-[150px]" />
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-1 mt-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-1 mt-4">
       <categoryCard
         v-for="item in categoryData"
         :key="item.id"
